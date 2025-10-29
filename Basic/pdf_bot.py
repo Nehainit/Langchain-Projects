@@ -1,12 +1,11 @@
 import streamlit as st
 from PyPDF2 import PdfReader
-from langchain.chains.combine_documents import create_stuff_documents_chain
-from langchain_openai import ChatOpenAI
+from langchain.chains.retrieval import create_retrieval_chain
+from langchain.chains.combine_documents import create_stuff_documents_chainfrom langchain_openai import ChatOpenAI
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import FAISS
 from langchain.prompts import PromptTemplate
-from langchain.chains import create_retrieval_chain
 from dotenv import load_dotenv
 import os
 
