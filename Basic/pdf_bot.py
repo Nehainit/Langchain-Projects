@@ -12,7 +12,6 @@ import os
 
 # ------------------- SETUP -------------------
 load_dotenv()
-st.set_page_config(page_title="PDF Chatbot", page_icon="📚")
 
 model = ChatOpenAI(temperature=0, model="gpt-4o-mini")
 
